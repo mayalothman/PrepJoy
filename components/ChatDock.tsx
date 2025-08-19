@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-function getBotReply(userMsg: string) {
+export function getBotReply(userMsg: string) {
   // Simple demo: echo or respond to keywords
   if (/dairy[- ]?free/i.test(userMsg)) return "Okay! I'll mark some meals as dairy-free.";
   if (/hello|hi|hey/i.test(userMsg)) return "Hello! How can I help you with your meal plan?";
