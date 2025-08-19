@@ -1,9 +1,8 @@
 "use client";
 import { useState } from "react";
-import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MemberEditor } from "./MemberEditor";
 
-export function SidebarSettings({ locale }: { locale: string }) {
+export function SidebarSettings() {
   // Demo toggles and settings, to be replaced with live state
   const [allergens, setAllergens] = useState<string[]>([]);
   const allergenList = ["gluten", "lactose", "nuts", "shellfish", "egg", "soy", "sesame"];
@@ -29,7 +28,6 @@ export function SidebarSettings({ locale }: { locale: string }) {
         </div>
       </div>
       <MemberEditor members={[{ name: "Luna", ageGroup: "child" }]} />
-      <LanguageSwitcher currentLocale={locale} />
       {/* TODO: Add diet, cuisine, accessibility, and member selectors */}
     </div>
   );
