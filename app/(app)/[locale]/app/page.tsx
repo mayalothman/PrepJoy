@@ -17,7 +17,7 @@ export default async function AppPage({ params }: { params: { locale: string } }
     <div className="flex h-screen bg-background text-foreground">
       {/* Left Sidebar: Settings */}
       <aside className="w-72 border-r bg-muted/50">
-        <SidebarSettings locale={params.locale} />
+        <SidebarSettings />
       </aside>
       {/* Center: Calendar */}
       <main className="flex-1 flex flex-col">
