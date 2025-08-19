@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 function getBotReply(userMsg: string) {
-  // Simple demo: echo or respond to keywords
+  // Simple demo: replies only when certain keywords are detected
   if (/dairy[- ]?free/i.test(userMsg)) return "Okay! I'll mark some meals as dairy-free.";
   if (/hello|hi|hey/i.test(userMsg)) return "Hello! How can I help you with your meal plan?";
   if (/chicken/i.test(userMsg)) return "Chicken is a great source of protein!";
